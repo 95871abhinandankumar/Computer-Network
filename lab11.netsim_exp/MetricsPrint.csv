@@ -1,0 +1,154 @@
+Link_Metrics
+
+Link_id,Link_throughput_plot,Packet_transmitted,Packet_transmitted,Packet_errored,Packet_errored,Packet_collided,Packet_collided,Bytes_transmitted(bytes),Payload_transmitted(bytes),Overhead_transmitted(bytes)
+ , ,Data,Control,Data,Control,Data,Control, , , 
+All,NA,1247,1380,3,0,0,0,1958140,1802920,155220
+1,NA,277,308,1,0,0,0,440114,400000,40114
+2,NA,415,458,1,0,0,0,659130,600000,59130
+5,NA,139,154,0,0,0,0,213244,201460,11784
+6,NA,276,308,0,0,0,0,423444,400000,23444
+7,NA,140,152,1,0,0,0,222208,201460,20748
+
+
+
+
+Queue_Metrics
+
+Device_id,Port_id,Queued_packet,Dequeued_packet,Dropped_packet
+4,2,292,292,0
+5,1,148,148,0
+6,2,145,145,0
+6,3,292,292,0
+
+
+
+
+TCP_Metrics
+
+Source,Destination,Local Address,Remote Address,Syn Sent,Syn-Ack Sent,Segment Sent,Segment Received,Segment Retransmitted,Ack Sent,Ack Received,Duplicate segment received,Out of order segment received,Duplicate ack received,Times RTO expired
+WIRED_NODE_1,ANY_DEVICE,11.1.1.2:0,0.0.0.0:0,0,0,0,0,0,0,0,0,0,0,0
+WIRED_NODE_2,ANY_DEVICE,11.2.1.2:0,0.0.0.0:0,0,0,0,0,0,0,0,0,0,0,0
+WIRED_NODE_3,ANY_DEVICE,11.5.1.2:0,0.0.0.0:0,0,0,0,0,0,0,0,0,0,0,0
+ROUTER_4,ANY_DEVICE,11.1.1.1:0,0.0.0.0:0,0,0,0,0,0,0,0,0,0,0,0
+ROUTER_5,ANY_DEVICE,11.3.1.2:0,0.0.0.0:0,0,0,0,0,0,0,0,0,0,0,0
+ROUTER_6,ANY_DEVICE,11.2.1.1:0,0.0.0.0:0,0,0,0,0,0,0,0,0,0,0,0
+WIRED_NODE_1,WIRED_NODE_2,11.1.1.2:82,11.2.1.2:36934,2,0,69,1,1,2,70,0,1,8,1
+WIRED_NODE_2,WIRED_NODE_1,11.2.1.2:12668,11.1.1.2:53000,2,0,69,1,0,2,70,0,1,1,1
+WIRED_NODE_3,WIRED_NODE_2,11.5.1.2:38338,11.2.1.2:31448,1,0,69,1,2,2,70,0,1,10,0
+WIRED_NODE_1,WIRED_NODE_2,11.1.1.2:53000,11.2.1.2:12668,0,2,0,70,0,71,1,0,0,0,1
+WIRED_NODE_2,WIRED_NODE_3,11.2.1.2:31448,11.5.1.2:38338,0,1,0,70,0,70,1,0,9,0,0
+WIRED_NODE_2,WIRED_NODE_1,11.2.1.2:36934,11.1.1.2:82,0,1,0,70,0,70,1,0,7,0,0
+WIRED_NODE_1,WIRED_NODE_2,11.1.1.2:22956,11.2.1.2:58716,1,0,69,1,0,2,70,0,1,1,0
+WIRED_NODE_2,WIRED_NODE_1,11.2.1.2:53924,11.1.1.2:48928,1,0,69,1,0,2,70,0,1,1,0
+WIRED_NODE_3,WIRED_NODE_2,11.5.1.2:11410,11.2.1.2:56290,1,0,69,1,0,2,70,0,1,1,0
+WIRED_NODE_2,WIRED_NODE_1,11.2.1.2:58716,11.1.1.2:22956,0,1,0,70,0,70,1,0,0,0,0
+WIRED_NODE_1,WIRED_NODE_2,11.1.1.2:48928,11.2.1.2:53924,0,1,0,70,0,70,1,0,0,0,0
+WIRED_NODE_2,WIRED_NODE_3,11.2.1.2:56290,11.5.1.2:11410,0,1,0,70,0,70,1,0,0,0,0
+
+
+
+
+IP_Metrics
+
+Device Id,Packet sent,Packet forwarded,Packet received,Packet discarded,TTL expired,Firewall blocked
+1,294,0,291,0,0,0
+2,435,0,437,0,0,0
+3,148,0,144,0,0,0
+4,583,584,1,2,0,0
+5,292,291,1,0,0,0
+6,875,873,2,0,0,0
+
+
+
+
+WIRED_NODE_1
+
+Network Destination,Netmask/Prefix len,Gateway,Interface,Metrics,Type
+11.1.0.0,255.255.0.0,on-link,11.1.1.2 ,300,LOCAL
+224.0.0.1,255.255.255.255,on-link,11.1.1.2 ,306,MULTICAST
+224.0.0.0,240.0.0.0,on-link,11.1.1.2 ,306,MULTICAST
+255.255.255.255,255.255.255.255,on-link,11.1.1.2 ,999,BROADCAST
+0.0.0.0,0.0.0.0,11.1.1.1,11.1.1.2 ,999,DEFAULT
+
+
+
+
+WIRED_NODE_2
+
+Network Destination,Netmask/Prefix len,Gateway,Interface,Metrics,Type
+11.2.0.0,255.255.0.0,on-link,11.2.1.2 ,300,LOCAL
+224.0.0.1,255.255.255.255,on-link,11.2.1.2 ,306,MULTICAST
+224.0.0.0,240.0.0.0,on-link,11.2.1.2 ,306,MULTICAST
+255.255.255.255,255.255.255.255,on-link,11.2.1.2 ,999,BROADCAST
+0.0.0.0,0.0.0.0,11.2.1.1,11.2.1.2 ,999,DEFAULT
+
+
+
+
+WIRED_NODE_3
+
+Network Destination,Netmask/Prefix len,Gateway,Interface,Metrics,Type
+11.5.0.0,255.255.0.0,on-link,11.5.1.2 ,300,LOCAL
+224.0.0.1,255.255.255.255,on-link,11.5.1.2 ,306,MULTICAST
+224.0.0.0,240.0.0.0,on-link,11.5.1.2 ,306,MULTICAST
+255.255.255.255,255.255.255.255,on-link,11.5.1.2 ,999,BROADCAST
+0.0.0.0,0.0.0.0,11.5.1.1,11.5.1.2 ,999,DEFAULT
+
+
+
+
+ROUTER_4
+
+Network Destination,Netmask/Prefix len,Gateway,Interface,Metrics,Type
+11.3.1.1,255.255.255.255,11.4.1.1,11.4.1.2 ,100,OSPF
+11.4.1.1,255.255.255.255,11.4.1.1,11.4.1.2 ,100,OSPF
+11.3.1.2,255.255.255.255,11.4.1.1,11.4.1.2 ,200,OSPF
+11.4.0.0,255.255.0.0,on-link,11.4.1.2 ,300,LOCAL
+11.1.0.0,255.255.0.0,on-link,11.1.1.1 ,300,LOCAL
+224.0.0.1,255.255.255.255,on-link,11.1.1.1 11.4.1.2 ,306,MULTICAST
+224.0.0.0,240.0.0.0,on-link,11.1.1.1 11.4.1.2 ,306,MULTICAST
+255.255.255.255,255.255.255.255,on-link,11.1.1.1 ,999,BROADCAST
+
+
+
+
+ROUTER_5
+
+Network Destination,Netmask/Prefix len,Gateway,Interface,Metrics,Type
+11.3.1.1,255.255.255.255,11.3.1.1,11.3.1.2 ,100,OSPF
+11.4.1.1,255.255.255.255,11.3.1.1,11.3.1.2 ,100,OSPF
+11.4.1.2,255.255.255.255,11.3.1.1,11.3.1.2 ,200,OSPF
+11.5.0.0,255.255.0.0,on-link,11.5.1.1 ,300,LOCAL
+11.3.0.0,255.255.0.0,on-link,11.3.1.2 ,300,LOCAL
+224.0.0.1,255.255.255.255,on-link,11.3.1.2 11.5.1.1 ,306,MULTICAST
+224.0.0.0,240.0.0.0,on-link,11.3.1.2 11.5.1.1 ,306,MULTICAST
+255.255.255.255,255.255.255.255,on-link,11.5.1.1 ,999,BROADCAST
+
+
+
+
+ROUTER_6
+
+Network Destination,Netmask/Prefix len,Gateway,Interface,Metrics,Type
+11.4.1.2,255.255.255.255,11.4.1.2,11.4.1.1 ,100,OSPF
+11.3.1.2,255.255.255.255,11.3.1.2,11.3.1.1 ,100,OSPF
+11.4.0.0,255.255.0.0,on-link,11.4.1.1 ,300,LOCAL
+11.3.0.0,255.255.0.0,on-link,11.3.1.1 ,300,LOCAL
+11.2.0.0,255.255.0.0,on-link,11.2.1.1 ,300,LOCAL
+224.0.0.1,255.255.255.255,on-link,11.2.1.1 11.3.1.1 11.4.1.1 ,306,MULTICAST
+224.0.0.0,240.0.0.0,on-link,11.2.1.1 11.3.1.1 11.4.1.1 ,306,MULTICAST
+255.255.255.255,255.255.255.255,on-link,11.2.1.1 ,999,BROADCAST
+
+
+
+
+Application_Metrics
+
+Application Id,Application Name,Source Id,Destination Id,Packet generated,Packet received,Payload generated (bytes),Payload received (bytes),Throughput (Mbps),Delay(microsec),Jitter(microsec)
+1,App1_FTP,1,2,138,138,200000,200000,0.160000,507332.794203,7567.450511
+2,App2_FTP,2,1,138,138,200000,200000,0.160000,506674.315942,7539.838540
+3,App3_FTP,3,2,138,138,200000,200000,0.160000,7034.263188,249.769343
+
+
+
+

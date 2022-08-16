@@ -1,0 +1,5 @@
+NetSim Academic 13.0.29
+OS: Windows 10 64 en
+RAM: 7.92 GB
+Monitor Size: 1920 * 1080
+Scaling: 120
